@@ -1,40 +1,32 @@
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 export default function AvatarScreen() {
+  const handleCheckFittingResult = () => {
+    // 나중에 fitting 결과 GET 요청으로 받아올 예정
+    alert('여기에 피팅 결과 API 연결 예정!');
+  };
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>👕 아바타 피팅 공간</Text>
-      <View style={styles.avatarPlaceholder}>
-        <Text style={styles.avatarText}>[ 여기에 AI 아바타가 들어갑니다 ]</Text>
+      <Text style={styles.title}>👕 아바타 피팅 결과</Text>
+      <View style={styles.avatarBox}>
+        <Text>🧍‍♂️ [아바타 영역]</Text>
       </View>
-      <Button title="아바타 설정하기" onPress={() => {}} />
+      <Button title="피팅 결과 불러오기" onPress={handleCheckFittingResult} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 24,
-  },
-  avatarPlaceholder: {
+  container: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
+  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
+  avatarBox: {
+    width: '100%',
     height: 300,
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    borderColor: '#999',
-    justifyContent: 'center',
+    backgroundColor: '#eee',
+    borderRadius: 12,
     alignItems: 'center',
+    justifyContent: 'center',
     marginBottom: 20,
-    borderRadius: 16,
-  },
-  avatarText: {
-    fontSize: 16,
-    color: '#777',
   },
 });
