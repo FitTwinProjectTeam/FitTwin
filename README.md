@@ -228,10 +228,10 @@ FitTwin/
 - 아바타 피팅 API 연동 (POST /fitting)
 - 예외처리 및 로딩 상태 처리
 
+## 📽️ 시연 영상(2025.05.31. 기준)
 
-## 🖼️ 시연영상(2025.05.31. 기준)
+[![시연 영상](https://img.youtube.com/vi/kq1Hx8Iqd54/0.jpg)](https://youtube.com/shorts/kq1Hx8Iqd54)
 
-[![시연 영상]([https://img.youtube.com/vi/영상ID/0.jpg](https://www.youtube.com/shorts/kq1Hx8Iqd54))]([https://www.youtube.com/watch?v=영상ID](https://www.youtube.com/shorts/kq1Hx8Iqd54))
 
 ## 👥 팀원
 
