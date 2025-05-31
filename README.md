@@ -21,7 +21,7 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 - 👤 **아바타 생성**: 사용자 체형 정보 기반 3D 아바타 생성
 - 👕 **가상 피팅**: 실시간 의류 피팅 시뮬레이션
 - 🛒 **상품 관리**: 다양한 카테고리의 의류 상품 브라우징
-
+- 📸 **AI 기반 아바타 자동 생성**: 사용자의 전신 이미지를 업로드하면 앱 내에서 렌더링 및 피팅 적용
 
 ## 🛠️ 기술 스택
 
@@ -38,9 +38,16 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 - **API Handling**: axios (기본 인스턴스 설정 포함)
 - **UI Components**: 기본 React Native + 커스텀 스타일링 (StyleSheet)
 - **Navigation**: @react-navigation/native + expo-router (탭/스택 혼합)
+- **Three.js**: 생성된 `.obj` 또는 `.glb` 모델 렌더링
+
 ### DevOps
 - **Version Control**: Git & GitHub
 - **Environment**: dotenv for environment variables
+
+### AI / 3D 모델 처리
+- **OpenPose**: 사용자 이미지에서 2D keypoint 추출
+- **PIFuHD**: 단일 이미지 기반 3D 아바타 재구성 (Mesh 생성)
+
 
 ## 📡 API Endpoints
 
@@ -220,13 +227,20 @@ FitTwin/
   - RESTful API 설계 및 구현
   - MongoDB 데이터베이스 설계
   
-- **신승** - Frontend Developer
+- **신승원** - Frontend Developer
   - React Native 앱 개발
   - UI/UX 구현
   - API 연동
+- **[박재민]** – Frontend Developer / 3D 아바타 생성 담당
+  - React Native 앱 개발
+  - 사용자 체형 정보 기반 3D 아바타 생성 기능 구현
+  - Three.js 및 @react-three/fiber를 활용한 아바타 모델 렌더링 및 회전/확대 등 인터랙션 처리
+  
 
 ## 🔮 향후 계획
 
+- [ ] PIFuHD + OpenPose 기반 사용자 이미지 → 3D Mesh 변환 자동화 파이프라인 구축
+- [ ] 아바타 생성 기능 API 연동
 - [ ] 실시간 3D 피팅 렌더링 구현
 - [ ] 사용자 리뷰 및 평점 시스템
 - [ ] 가상 아바타 저장 및 관리
