@@ -115,20 +115,15 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 
 ### 프론트엔드 설정
 
-1. **의존성 설치**
-   ```bash
-   cd frontend
-   npm install
-   ```
+# Expo 개발 서버 실행 (웹 포함)
+cd frontend
+npx expo start --tunnel
 
-2. **앱 실행**
-   ```bash
-   # iOS
-   npm run ios
-   
-   # Android
-   npm run android
-   ```
+# Android 디바이스 연결 시
+npm run android
+
+# 웹에서 실행
+npm run web
 
 ## 📁 프로젝트 구조
 
@@ -206,6 +201,14 @@ FitTwin/
 }
 ```
 
+## 🛒 프론트엔드 주요 구현 기능
+- 하단 탭 네비게이션 구현 (상품 리스트 / 아바타)
+- 상품 목록 표시 (카테고리 필터 포함)
+- 상품 상세 페이지 구현 (이미지, 제목, 설명, 가격, 피팅 버튼)
+- 아바타 피팅 API 연동 (POST /fitting)
+- 예외처리 및 로딩 상태 처리
+
+
 ## 🖼️ 스크린샷
 
 [프로젝트 스크린샷 추가 예정]
@@ -217,7 +220,7 @@ FitTwin/
   - RESTful API 설계 및 구현
   - MongoDB 데이터베이스 설계
   
-- **[친구 이름]** - Frontend Developer
+- **신승** - Frontend Developer
   - React Native 앱 개발
   - UI/UX 구현
   - API 연동
