@@ -6,10 +6,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-v4.4+-brightgreen.svg)](https://www.mongodb.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React Native](https://img.shields.io/badge/React%20Native-%5E0.73.0-blue.svg)](https://reactnative.dev/)
-[![Expo](https://img.shields.io/badge/Expo-^50.0.0-000020.svg)](https://expo.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-%5E5.0.0-3178c6.svg)](https://www.typescriptlang.org/)
-[![axios](https://img.shields.io/badge/axios-^1.6.0-5A29E4.svg)](https://axios-http.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 
 
 ## 📌 프로젝트 소개
