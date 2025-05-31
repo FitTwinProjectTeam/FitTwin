@@ -32,10 +32,12 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 - **API**: RESTful API Architecture
 
 ### Frontend
-- **Framework**: React Native
-- **State Management**: [사용 중인 상태관리 라이브러리]
-- **UI Components**: [사용 중인 UI 라이브러리]
-
+- **Framework**: React Native (Expo 기반)  
+- **Routing**: expo-router (파일 기반 라우팅)  
+- **State Management**: React useState / useEffect 기반
+- **API Handling**: axios (기본 인스턴스 설정 포함)
+- **UI Components**: 기본 React Native + 커스텀 스타일링 (StyleSheet)
+- **Navigation**: @react-navigation/native + expo-router (탭/스택 혼합)
 ### DevOps
 - **Version Control**: Git & GitHub
 - **Environment**: dotenv for environment variables
