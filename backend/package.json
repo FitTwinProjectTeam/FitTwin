@@ -1,0 +1,12 @@
+
+{
+    "name" : "FitTwin",
+    "version" :"0.0.1",
+    "description":"express로 만드는 쇼핑몰 서비스",
+    "main" : "app.js",
+    "scripts":{
+        "start" : "nodemon server"
+    },
+    "author" : "KJS", 
+    "license" : "MIT" 
+}
