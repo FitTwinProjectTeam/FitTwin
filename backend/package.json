@@ -1,12 +1,21 @@
-
 {
-    "name" : "FitTwin",
-    "version" :"0.0.1",
-    "description":"express로 만드는 쇼핑몰 서비스",
-    "main" : "app.js",
-    "scripts":{
-        "start" : "nodemon server"
+    "name": "FitTwin",
+    "version": "0.0.1",
+    "description": "express로 만드는 쇼핑몰 서비스",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon server"
     },
-    "author" : "KJS", 
-    "license" : "MIT" 
+    "author": "KJS",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    },
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "mongoose": "^8.15.1"
+    }
 }
