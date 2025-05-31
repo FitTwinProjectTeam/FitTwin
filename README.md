@@ -5,7 +5,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v14+-green.svg)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v4.4+-brightgreen.svg)](https://www.mongodb.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![ReactNative]
+[![ReactNative](https://reactnative.dev/)
 
 
 ## 📌 프로젝트 소개
