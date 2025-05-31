@@ -98,27 +98,26 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 3. **환경 변수 설정**
    ```bash
    # .env 파일 생성
+   # `.env` 파일 내용:
    ```
-   
-   ```
-   `.env` 파일 내용:
+   ```env
    HTTP_PORT=5000
    HOST=localhost
    MONGODB_URI=mongodb://localhost:27017/fittwin
    ```
 
-4. **MongoDB 실행**
+5. **MongoDB 실행**
    ```bash
    mkdir -p ~/mongodb_data
    mongod --dbpath ~/mongodb_data
    ```
 
-5. **시드 데이터 추가 (선택사항)**
+6. **시드 데이터 추가 (선택사항)**
    ```bash
    node seeds/productSeeds.js
    ```
 
-6. **서버 실행**
+7. **서버 실행**
    ```bash
    npm start
    ```
