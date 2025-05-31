@@ -98,8 +98,6 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 3. **환경 변수 설정**
    ```bash
    # .env 파일 생성
-   cp .env.example .env
-   ```
    
    `.env` 파일 내용:
    ```
@@ -110,7 +108,8 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 
 4. **MongoDB 실행**
    ```bash
-   mongod
+   mkdir -p ~/mongodb_data
+   mongod --dbpath ~/mongodb_data
    ```
 
 5. **시드 데이터 추가 (선택사항)**
@@ -124,6 +123,17 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
    ```
 
 ### 프론트엔드 설정
+
+1. **프론트엔드 의존성 설치**
+   ```bash
+   cd frontend
+   npm install
+   ```
+2. **프론트엔드 실행**
+   ```bash
+   npm run web
+   ```
+   
 
 # Expo 개발 서버 실행 (웹 포함)
 cd frontend
@@ -219,13 +229,13 @@ FitTwin/
 - 예외처리 및 로딩 상태 처리
 
 
-## 🖼️ 스크린샷
+## 🖼️ 시연영상(2025.05.31. 기준)
 
-[프로젝트 스크린샷 추가 예정]
+[![시연 영상](https://img.youtube.com/vi/영상ID/0.jpg)](https://www.youtube.com/watch?v=영상ID)
 
 ## 👥 팀원
 
-- **[당신의 이름]** - Backend Developer
+- **강지석** - Backend Developer
   - Node.js 서버 개발
   - RESTful API 설계 및 구현
   - MongoDB 데이터베이스 설계
@@ -234,10 +244,15 @@ FitTwin/
   - React Native 앱 개발
   - UI/UX 구현
   - API 연동
-- **[박재민]** – Frontend Developer / 3D 아바타 생성 담당
+- **박재민** – Frontend Developer / 3D 아바타 생성 담당
   - React Native 앱 개발
   - 사용자 체형 정보 기반 3D 아바타 생성 기능 구현
   - Three.js 및 @react-three/fiber를 활용한 아바타 모델 렌더링 및 회전/확대 등 인터랙션 처리
+ 
+- **김기석** – Project Designer
+  - 서비스 기획 및 전체 구조 설계
+  - IR 피칭 자료 제작 및 발표
+  - 앱 UI/UX 디자인 및 프로토타입 제작 (Figma)
   
 
 ## 🔮 향후 계획
