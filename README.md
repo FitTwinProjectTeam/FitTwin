@@ -139,13 +139,13 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 본 프로젝트의 3D 아바타 생성 기능은 아래 GitHub 오픈소스를 참고하여 구현되었습니다.
 
 - 참고한 GitHub 링크: 
-1. keypoint 추출 [https://github.com/CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
-2. .obj파일 생성
+1. keypoint 추출:  [https://github.com/CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+2. .obj파일 생성: [https://github.com/facebookresearch/pifuhd](https://github.com/facebookresearch/pifuhd)
 
 위 프로젝트들을 기반으로 이미지에서 keypoint를 추출한 뒤, .obj 파일을 아래 경로에 파일을 저장하면 앱에서 아바타로 렌더링됩니다.
 
-|⚠️ 파일명은 반드시 `myphoto.obj`이어야 하며, 위치도 `frontend/assets/objects` 폴더 내여야 합니다.  
-|해당 오브젝트는 React Native와 Three.js (`@react-three/fiber`)를 통해 앱 내에서 렌더링되고, 회전 및 확대 등 기본 인터랙션이 지원됩니다.
+⚠️ 파일명은 반드시 `myphoto.obj`이어야 하며, 위치도 `frontend/assets/objects` 폴더 내여야 합니다.  
+해당 오브젝트는 React Native와 Three.js (`@react-three/fiber`)를 통해 앱 내에서 렌더링되고, 회전 및 확대 등 기본 인터랙션이 지원됩니다.
 
 
 ## 📁 프로젝트 구조
