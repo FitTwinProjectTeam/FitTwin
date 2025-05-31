@@ -36,7 +36,7 @@ const productSchema = new mongoose.Schema({
     //상품 카테고리
     category:{
         type:String,
-        enum:['상의','하의','아우터','신발','액세서리','기타'],
+        enum:['상의','하의','아우터','셋업','액세서리','기타'],
         default:'기타'
     },
 
@@ -51,13 +51,9 @@ const productSchema = new mongoose.Schema({
     isAvailable:{
         type:Boolean,
         default:true
-    },
-
-    // 생성시간
-    createAt:{
-        type:Date,
-        default:Date.now
     }
+
+   
 
 });
 
