@@ -1,4 +1,5 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
+import  AvatarComponent from '../../components/AvatarCompnent';
 
 export default function AvatarScreen() {
   const handleCheckFittingResult = () => {
@@ -10,7 +11,7 @@ export default function AvatarScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>👕 아바타 피팅 결과</Text>
       <View style={styles.avatarBox}>
-        <Text>🧍‍♂️ [아바타 영역]</Text>
+        <AvatarComponent/>
       </View>
       <Button title="피팅 결과 불러오기" onPress={handleCheckFittingResult} />
     </View>
@@ -22,11 +23,11 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
   avatarBox: {
     width: '100%',
-    height: 300,
+    height: 300, 
     backgroundColor: '#eee',
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 20,
-  },
+  }
 });
+
