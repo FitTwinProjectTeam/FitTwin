@@ -98,9 +98,10 @@ FitTwin은 사용자의 체형 데이터를 기반으로 가상 피팅 서비스
 3. **환경 변수 설정**
    ```bash
    # .env 파일 생성
-   
-   `.env` 파일 내용:
    ```
+   
+   ```
+   `.env` 파일 내용:
    HTTP_PORT=5000
    HOST=localhost
    MONGODB_URI=mongodb://localhost:27017/fittwin
@@ -231,7 +232,7 @@ FitTwin/
 
 ## 🖼️ 시연영상(2025.05.31. 기준)
 
-[![시연 영상](https://img.youtube.com/vi/영상ID/0.jpg)](https://www.youtube.com/watch?v=영상ID)
+[![시연 영상]([https://img.youtube.com/vi/영상ID/0.jpg](https://www.youtube.com/shorts/kq1Hx8Iqd54))]([https://www.youtube.com/watch?v=영상ID](https://www.youtube.com/shorts/kq1Hx8Iqd54))
 
 ## 👥 팀원
 
