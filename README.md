@@ -151,7 +151,20 @@ FitTwin/
 │   ├── server.js            # 서버 엔트리 포인트
 │   └── package.json
 └── frontend/
-    └── [React Native 프로젝트 구조]
+    ├── app/                    # 페이지 구성 (expo-router 기반)
+    │   ├── (tabs)/             # 탭 네비게이션
+    │   ├── product/            # 상품 관련 페이지
+    │   │   └── [id].tsx        # 상품 상세
+    │   └── avatar.tsx         # 아바타 페이지
+    ├── components/             # 재사용 가능한 컴포넌트들
+    ├── constants/              # 상수 정의
+    ├── hooks/                  # 커스텀 훅
+    ├── lib/                    # axios 인스턴스 등 라이브러리 설정
+    ├── assets/                 # 이미지 및 리소스
+    ├── scripts/                # 기타 스크립트 (예: seed script 호출)
+    ├── app.json                # 앱 설정
+    └── .gitignore              # 빌드/설치 파일 제외
+
 ```
 
 ## 📊 데이터베이스 스키마
