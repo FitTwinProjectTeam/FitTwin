@@ -27,8 +27,8 @@ export default function AvatarComponent() {
       <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
         <ambientLight intensity={0.8} />
         <directionalLight position={[0, 5, 5]} intensity={1} />
-        <OrbitControls enableZoom={true} enablePan={true} />
-        {objModel && <primitive object={objModel} scale={0.5} />}
+        <OrbitControls enableZoom={true} enablePan={true} minDistance={1} maxDistance={10} />
+        {objModel && <primitive object={objModel} scale={2} />}
       </Canvas>
     </View>
   );

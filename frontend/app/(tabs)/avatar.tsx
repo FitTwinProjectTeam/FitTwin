@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
   avatarBox: {
     width: '100%',
-    height: 300, 
+    height: '80%', 
     backgroundColor: '#eee',
     borderRadius: 12,
     alignItems: 'center',
